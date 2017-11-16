@@ -24,5 +24,9 @@ public final class CommonTriggerEvents {
     public static final String SHORT_PRESSED = "SHORT_PRESSED";
     public static final String DOUBLE_PRESSED = "DOUBLE_PRESSED";
     public static final String LONG_PRESSED = "LONG_PRESSED";
+    public static final String UP_PRESSED = "UP_PRESSED";
+    public static final String UP_RELEASED = "UP_RELEASED";
+    public static final String DOWN_PRESSED = "DOWN_PRESSED";
+    public static final String DOWN_RELEASED = "DOWN_RELEASED";
 
 }
