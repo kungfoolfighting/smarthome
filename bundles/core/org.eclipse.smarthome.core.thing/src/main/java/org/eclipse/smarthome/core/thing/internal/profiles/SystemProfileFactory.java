@@ -65,9 +65,9 @@ public class SystemProfileFactory implements ProfileFactory, ProfileAdvisor, Pro
         } else if (SystemProfiles.RAWBUTTON_TOGGLE_SWITCH.equals(profileTypeUID)) {
             return new RawButtonToggleSwitchProfile(callback);
         } else if (SystemProfiles.RAWROCKER_TO_ON_OFF.equals(profileTypeUID)) {
-            return new RawRockerToOnOffProfile(callback);
+            return new RawRockerOnOffProfile(callback);
         } else if (SystemProfiles.RAWROCKER_TO_DIMMER.equals(profileTypeUID)) {
-            return new RawRockerToDimmerProfile(callback, context);
+            return new RawRockerDimmerProfile(callback, context);
         } else {
             return null;
         }

@@ -30,12 +30,12 @@ import org.eclipse.smarthome.core.types.Command;
 import org.eclipse.smarthome.core.types.State;
 
 /**
- * The {@link RawRockerToDimmerProfile} transforms rocker switch channel events into dimmer commands.
+ * The {@link RawRockerDimmerProfile} transforms rocker switch channel events into dimmer commands.
  *
  * @author Jan Kemmler - Initial contribution
  */
 @NonNullByDefault
-public class RawRockerToDimmerProfile implements TriggerProfile {
+public class RawRockerDimmerProfile implements TriggerProfile {
 
     private final ProfileCallback callback;
 
@@ -48,7 +48,7 @@ public class RawRockerToDimmerProfile implements TriggerProfile {
 
     private long pressedTime = 0;
 
-    RawRockerToDimmerProfile(ProfileCallback callback, ProfileContext context) {
+    RawRockerDimmerProfile(ProfileCallback callback, ProfileContext context) {
         this.callback = callback;
         this.context = context;
     }
